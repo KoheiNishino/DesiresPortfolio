@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="84" id="KGk-i7-Jjw" customClass="MainTableViewCell" customModule="Desires" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="¥300,000,000,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KIu-lc-u4b">
+                        <rect key="frame" x="20" y="52.333333333333336" width="290" height="21.666666666666664"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkp-mA-FU9">
+                        <rect key="frame" x="275" y="5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="XCg-uv-rYk"/>
+                            <constraint firstAttribute="height" constant="35" id="cd2-cW-ClC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="tintColor" red="0.50588235290000005" green="0.15686274510000001" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="arrow.right.square.fill" catalog="system"/>
+                        <connections>
+                            <action selector="urlButtonTouchUpInside:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Teb-5U-8Vd"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SvP-92-5Co">
+                        <rect key="frame" x="20" y="9.9999999999999982" width="245" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KIu-lc-u4b" secondAttribute="bottom" constant="10" id="5zD-0g-vlX"/>
+                    <constraint firstItem="Rkp-mA-FU9" firstAttribute="leading" secondItem="SvP-92-5Co" secondAttribute="trailing" constant="10" id="Ceb-ko-i1J"/>
+                    <constraint firstItem="SvP-92-5Co" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="DOV-UY-USZ"/>
+                    <constraint firstItem="Rkp-mA-FU9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="DpG-zL-MXy"/>
+                    <constraint firstAttribute="trailing" secondItem="Rkp-mA-FU9" secondAttribute="trailing" constant="10" id="F5u-e9-zra"/>
+                    <constraint firstAttribute="trailing" secondItem="KIu-lc-u4b" secondAttribute="trailing" constant="10" id="iw3-qN-mEg"/>
+                    <constraint firstItem="KIu-lc-u4b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="m1c-OA-aqG"/>
+                    <constraint firstItem="SvP-92-5Co" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="tI1-XX-W4b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="feeLabel" destination="KIu-lc-u4b" id="O5c-7z-d77"/>
+                <outlet property="nameLabel" destination="SvP-92-5Co" id="ZNH-2q-YxU"/>
+                <outlet property="urlButton" destination="Rkp-mA-FU9" id="I49-ZV-HLB"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="166.07142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.right.square.fill" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
